@@ -76,11 +76,13 @@ function HeroGeometric({
     badge = "Design Collective",
     title1 = "Elevate Your Digital Vision",
     title2 = "Crafting Exceptional Websites",
+    description = "",
     children,
 }: {
     badge?: string;
     title1?: string;
     title2?: string;
+    description?: string;
     children?: React.ReactNode;
 }) {
     const fadeUpVariants = {
@@ -190,7 +192,7 @@ function HeroGeometric({
                         animate="visible"
                     >
                         <p className="text-base sm:text-lg md:text-xl text-navy/60 mb-8 leading-relaxed font-light tracking-wide max-w-2xl mx-auto px-4">
-                            Hum aapke pharma brand ko Pakistan ke har kone mein pohnchayenge through targeted franchise lead generation and territory-based marketing.
+                            {description || "Hum aapke pharma brand ko Pakistan ke har kone mein pohnchayenge through targeted franchise lead generation and territory-based marketing."}
                         </p>
                     </motion.div>
 

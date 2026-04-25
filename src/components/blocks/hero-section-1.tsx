@@ -35,16 +35,17 @@ export function HeroSection() {
             <HeroHeader />
             <HeroGeometric 
                 badge="Pakistan's #1 Pharma Expansion Agency"
-                title1="We Don't Sell Marketing."
-                title2="We Bring You Franchisers."
+                title1="Fill Uncovered Markets with"
+                title2="Qualified Leads"
+                description="Torrent Pharma Marketing connects pharmaceutical manufacturers with serious franchisers and distributors across Pakistan — faster and smarter than field sales alone."
             >
                 <div className="mt-12 flex flex-col items-center justify-center gap-4 md:flex-row">
                     <Button
                         variant="solid"
                         size="lg"
-                        className="rounded-full px-8 text-base bg-navy hover:bg-navy/90 text-white border-none shadow-[0_0_20px_rgba(26,26,94,0.3)]">
+                        className="rounded-full px-8 text-base bg-teal hover:bg-teal/90 text-white border-none shadow-[0_0_20px_rgba(0,168,120,0.3)]">
                         <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                            <span className="text-nowrap flex items-center gap-2 font-bold">Start Growing <ArrowRight className="size-4" /></span>
+                            <span className="text-nowrap flex items-center gap-2 font-bold">WhatsApp Us Now <MessageCircle className="size-4" /></span>
                         </a>
                     </Button>
                     <Button
