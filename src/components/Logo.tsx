@@ -9,8 +9,8 @@ interface LogoProps {
 export const Logo = ({ className, size = 'md' }: LogoProps) => {
     return (
         <img 
-            src="/logo.png" 
-            alt="Torrent Pharma Logo" 
+            src="/logo2.png" 
+            alt="Torrent Marketing Logo" 
             className={cn("object-contain", size === 'sm' ? 'max-h-8' : size === 'md' ? 'max-h-12' : 'max-h-20', className)} 
         />
     )

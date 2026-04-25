@@ -1,5 +1,5 @@
 import { MessageCircle, CheckCircle2, TrendingUp, Users, MapPin, ArrowRight, BarChart3, PhoneCall, Zap, Info, FileText, Facebook, Instagram } from "lucide-react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { Logo } from "./Logo";
 import { HeroSection } from "./blocks/hero-section-1";
 import { Button } from "@/components/ui/neon-button";
