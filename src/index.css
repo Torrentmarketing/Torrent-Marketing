@@ -2,8 +2,8 @@
 @import "tailwindcss";
 
 @theme {
+  --font-display: "Playfair Display", serif;
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Syne", sans-serif;
   
   --color-navy: #1A1A5E;
   --color-teal: #00A878;
@@ -19,7 +19,7 @@
 
 :root {
   --font-body-family: "DM Sans", sans-serif;
-  --font-heading-family: "Syne", sans-serif;
+  --font-heading-family: "Playfair Display", serif;
 }
 
 body {
@@ -28,8 +28,13 @@ body {
   color: var(--color-navy);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   font-family: var(--font-heading-family);
+  color: var(--color-navy);
+}
+
+h4, h5, h6 {
+  font-family: var(--font-body-family);
   color: var(--color-navy);
 }
 
