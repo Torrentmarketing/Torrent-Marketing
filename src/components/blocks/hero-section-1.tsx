@@ -129,7 +129,7 @@ export const HeroHeader = () => {
                                     <li key={index}>
                                         <a
                                             href={item.href}
-                                            className="text-slate-600 hover:text-navy block duration-150 font-medium">
+                                            className="text-navy/80 hover:text-navy block duration-150 font-medium">
                                             <span>{item.name}</span>
                                         </a>
                                     </li>
@@ -144,7 +144,7 @@ export const HeroHeader = () => {
                                         <li key={index}>
                                             <a
                                                 href={item.href}
-                                                className="text-slate-600 hover:text-navy block duration-150 font-medium">
+                                                className="text-navy/80 hover:text-navy block duration-150 font-medium">
                                                 <span>{item.name}</span>
                                             </a>
                                         </li>

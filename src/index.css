@@ -4,7 +4,7 @@
   --font-display: "Playfair Display", serif;
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   
-  --color-navy: #1A1A5E;
+  --color-navy: #000066;
   --color-teal: #00A878;
   --color-light-bg: #F4F8F6;
   --color-white: #FFFFFF;
@@ -24,7 +24,7 @@
 body {
   font-family: var(--font-body-family);
   background-color: var(--color-light-bg);
-  color: var(--color-navy);
+  color: #000066;
 }
 
 h1, h2, h3 {

@@ -4,7 +4,6 @@ import { Logo } from "./Logo";
 import { HeroSection } from "./blocks/hero-section-1";
 import { Button } from "@/components/ui/neon-button";
 import { AnimatedTestimonials } from "./blocks/animated-testimonials";
-import { AnimatedAIChat } from "./ui/animated-ai-chat";
 
 const WHATSAPP_NUMBER = "923065904574";
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20Torrent%20Pharma,%20I%20want%20to%20discuss%20pharma%20expansion%20opportunities.`;
@@ -14,7 +13,7 @@ const UserPaths = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
         <h2 className="text-4xl font-display font-bold text-navy mb-4">Choose Your Path</h2>
-        <p className="text-slate-600 max-w-2xl mx-auto">Whether you are a manufacturer looking to expand or a professional looking for a franchise, we have the right opportunity for you.</p>
+        <p className="text-navy/80 max-w-2xl mx-auto">Whether you are a manufacturer looking to expand or a professional looking for a franchise, we have the right opportunity for you.</p>
       </div>
       <div className="grid md:grid-cols-2 gap-8">
         {/* Company Path */}
@@ -26,11 +25,11 @@ const UserPaths = () => (
             <BarChart3 size={120} />
           </div>
           <h3 className="text-2xl font-display font-bold text-navy mb-4">For Companies</h3>
-          <p className="text-slate-600 mb-6">Pharmaceutical Manufacturers looking to fill uncovered territories and find serious distributors across Pakistan.</p>
+          <p className="text-navy/80 mb-6">Pharmaceutical Manufacturers looking to fill uncovered territories and find serious distributors across Pakistan.</p>
           <ul className="space-y-3 mb-8">
-            <li className="flex items-center gap-2 text-sm text-slate-700"><CheckCircle2 className="w-4 h-4 text-green-500" /> City-wise franchise availability ads</li>
-            <li className="flex items-center gap-2 text-sm text-slate-700"><CheckCircle2 className="w-4 h-4 text-green-500" /> Qualified business leads only</li>
-            <li className="flex items-center gap-2 text-sm text-slate-700"><CheckCircle2 className="w-4 h-4 text-green-500" /> SMART goal alignment (Results in 30 days)</li>
+            <li className="flex items-center gap-2 text-sm text-navy/90"><CheckCircle2 className="w-4 h-4 text-green-500" /> City-wise franchise availability ads</li>
+            <li className="flex items-center gap-2 text-sm text-navy/90"><CheckCircle2 className="w-4 h-4 text-green-500" /> Qualified business leads only</li>
+            <li className="flex items-center gap-2 text-sm text-navy/90"><CheckCircle2 className="w-4 h-4 text-green-500" /> SMART goal alignment (Results in 30 days)</li>
           </ul>
           <Button 
             variant="solid"
@@ -50,11 +49,11 @@ const UserPaths = () => (
             <Users size={120} />
           </div>
           <h3 className="text-2xl font-display font-bold text-teal mb-4">For Franchisers</h3>
-          <p className="text-slate-600 mb-6">Entrepreneurs and Medical Store owners looking for high-margin pharma franchise opportunities in their city.</p>
+          <p className="text-navy/80 mb-6">Entrepreneurs and Medical Store owners looking for high-margin pharma franchise opportunities in their city.</p>
           <ul className="space-y-3 mb-8">
-            <li className="flex items-center gap-2 text-sm text-slate-700"><CheckCircle2 className="w-4 h-4 text-pharma-accent" /> Connect with top manufacturers</li>
-            <li className="flex items-center gap-2 text-sm text-slate-700"><CheckCircle2 className="w-4 h-4 text-pharma-accent" /> Monopoly rights & high margins</li>
-            <li className="flex items-center gap-2 text-sm text-slate-700"><CheckCircle2 className="w-4 h-4 text-pharma-accent" /> Verified business opportunities</li>
+            <li className="flex items-center gap-2 text-sm text-navy/90"><CheckCircle2 className="w-4 h-4 text-pharma-accent" /> Connect with top manufacturers</li>
+            <li className="flex items-center gap-2 text-sm text-navy/90"><CheckCircle2 className="w-4 h-4 text-pharma-accent" /> Monopoly rights & high margins</li>
+            <li className="flex items-center gap-2 text-sm text-navy/90"><CheckCircle2 className="w-4 h-4 text-pharma-accent" /> Verified business opportunities</li>
           </ul>
           <Button 
             variant="solid"
@@ -102,7 +101,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-display font-bold text-navy mb-4">Our Core Expertise</h2>
-          <p className="text-slate-600 max-w-2xl mx-auto text-lg">
+          <p className="text-navy/80 max-w-2xl mx-auto text-lg">
             Pharma marketing is different. Generic agencies don't understand your business. We do.
           </p>
         </div>
@@ -117,7 +116,7 @@ const Services = () => {
                 {s.icon}
               </div>
               <h3 className="text-xl font-display font-bold text-slate-900 mb-3">{s.title}</h3>
-              <p className="text-slate-600 leading-relaxed">{s.desc}</p>
+              <p className="text-navy/80 leading-relaxed">{s.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -251,7 +250,7 @@ const Pricing = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-display font-bold text-navy mb-4">Investment Plans</h2>
-          <p className="text-slate-600 max-w-2xl mx-auto text-lg">
+          <p className="text-navy/80 max-w-2xl mx-auto text-lg">
             Choose the plan that fits your expansion goals. No hidden fees.
           </p>
         </div>
@@ -269,7 +268,7 @@ const Pricing = () => {
               <h3 className="text-2xl font-display font-bold mb-2">{plan.name}</h3>
               <div className="mb-8">
                 <span className="text-4xl font-bold">Rs. {plan.price}</span>
-                <span className={`text-sm ${plan.popular ? 'text-blue-200' : 'text-slate-500'}`}> / month</span>
+                <span className={`text-sm ${plan.popular ? 'text-blue-200' : 'text-navy/70'}`}> / month</span>
               </div>
               <ul className="space-y-4 mb-10">
                 {plan.features.map((f, j) => (
@@ -309,27 +308,27 @@ const AboutUs = () => (
               About <span className="text-navy">Us</span>
             </h2>
             <div className="h-1.5 w-24 bg-teal rounded-full mb-8" />
-            <p className="text-slate-600 text-lg leading-relaxed mb-6">
+            <p className="text-navy/80 text-lg leading-relaxed mb-6">
               Torrent Pharma Marketing Services was built to solve a real problem in the pharmaceutical industry.
             </p>
-            <p className="text-slate-600 text-lg leading-relaxed mb-6">
+            <p className="text-navy/80 text-lg leading-relaxed mb-6">
               For years, manufacturers and local pharma franchise companies have relied on large sales teams to travel from city to city, searching for franchisers and distributors. This process is not only expensive, but also slow and unpredictable.
             </p>
             <p className="text-slate-900 font-bold text-xl mb-6">
               We saw this gap — and decided to fix it.
             </p>
-            <p className="text-slate-600 text-lg leading-relaxed">
+            <p className="text-navy/80 text-lg leading-relaxed">
               Torrent Pharma Marketing Services was created as a smarter, faster, and more cost-effective way to expand pharma businesses into untapped districts across Pakistan using the power of social media.
             </p>
           </div>
 
           <div className="bg-slate-50 p-8 rounded-[32px] border border-slate-100">
             <h3 className="text-2xl font-display font-bold text-navy mb-4">Founder’s Story</h3>
-            <p className="text-slate-700 font-bold mb-4">I’m Waqar Ali, the founder of Torrent Pharma Marketing Services.</p>
-            <p className="text-slate-600 mb-4">
+            <p className="text-navy/90 font-bold mb-4">I’m Waqar Ali, the founder of Torrent Pharma Marketing Services.</p>
+            <p className="text-navy/80 mb-4">
               With over 17 years of experience in the pharmaceutical industry and 6+ years in e-commerce and digital marketing, I’ve worked on both sides of the business — field sales and digital growth.
             </p>
-            <p className="text-slate-600 mb-6">
+            <p className="text-navy/80 mb-6">
               My journey started as a Territory Manager at Neuvic Pharma (Peshawar), and later I joined GSK Pharma in 2010 as a Product Specialist.
             </p>
             <div className="flex flex-wrap gap-2">
@@ -350,7 +349,7 @@ const AboutUs = () => (
         >
           <div className="glass-card p-8 rounded-[40px] border-slate-200 shadow-xl">
             <h3 className="text-2xl font-display font-bold text-navy mb-6">From Field Experience to Digital Expansion</h3>
-            <p className="text-slate-600 mb-6 leading-relaxed">
+            <p className="text-navy/80 mb-6 leading-relaxed">
               During COVID, I launched my own company, Torrent Pharma, as a KPK-based franchise operation. While working with multiple pharmaceutical companies — including Doctor Raza Pharma, Polyfine Pharma, Nicholas Pharma, Shazals Pharma, Rogen Pharma, Perk Pharma, Origin Pharma, and many others — I realized something important:
             </p>
             <p className="text-teal font-bold text-xl mb-8 italic">
@@ -366,17 +365,17 @@ const AboutUs = () => (
           <div className="grid grid-cols-2 gap-4">
             <div className="p-6 bg-slate-50 rounded-3xl border border-slate-100">
               <p className="text-3xl font-bold text-navy mb-1">1000+</p>
-              <p className="text-xs text-slate-500 font-bold uppercase tracking-wider">Pharma Contacts</p>
+              <p className="text-xs text-navy/70 font-bold uppercase tracking-wider">Pharma Contacts</p>
             </div>
             <div className="p-6 bg-slate-50 rounded-3xl border border-slate-100">
               <p className="text-3xl font-bold text-navy mb-1">10+</p>
-              <p className="text-xs text-slate-500 font-bold uppercase tracking-wider">Team Professionals</p>
+              <p className="text-xs text-navy/70 font-bold uppercase tracking-wider">Team Professionals</p>
             </div>
           </div>
 
           <div className="p-8 bg-pharma-accent/5 rounded-[32px] border border-pharma-accent/10">
             <h4 className="font-bold text-slate-900 mb-4">Our Vision</h4>
-            <p className="text-slate-700 leading-relaxed italic">
+            <p className="text-navy/90 leading-relaxed italic">
               "To make Torrent Pharma Marketing Services one of the top pharma marketing and expansion companies in Pakistan within the next 3 to 5 years."
             </p>
           </div>
@@ -531,7 +530,7 @@ const Footer = () => (
           </ul>
         </div>
       </div>
-      <div className="pt-8 border-t border-white/5 text-center text-slate-500 text-sm">
+      <div className="pt-8 border-t border-white/5 text-center text-navy/70 text-sm">
         <p>© {new Date().getFullYear()} Torrent Pharma Marketing Services. All rights reserved.</p>
       </div>
     </div>
@@ -549,15 +548,6 @@ export default function LandingPage() {
       <Pricing />
       <Results />
       
-      <section className="py-24 bg-light-bg">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-display font-bold text-navy mb-4">Ask Our AI Assistant</h2>
-            <p className="text-navy/60">Have questions about pharma expansion? Our AI is here to help.</p>
-          </div>
-          <AnimatedAIChat />
-        </div>
-      </section>
 
       <Footer />
       
