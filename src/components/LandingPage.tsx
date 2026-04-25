@@ -4,6 +4,7 @@ import { Logo } from "./Logo";
 import { HeroSection } from "./blocks/hero-section-1";
 import { Button } from "@/components/ui/neon-button";
 import { AnimatedTestimonials } from "./blocks/animated-testimonials";
+import { ParallaxScrollSection } from "./ui/parallax-scroll-feature-section";
 
 const WHATSAPP_NUMBER = "923065904574";
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20Torrent%20Pharma,%20I%20want%20to%20discuss%20pharma%20expansion%20opportunities.`;
@@ -545,6 +546,7 @@ export default function LandingPage() {
       <AboutUs />
       <Services />
       <ExpansionSystem />
+      <ParallaxScrollSection />
       <Pricing />
       <Results />
       
