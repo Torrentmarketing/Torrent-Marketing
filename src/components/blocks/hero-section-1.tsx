@@ -5,9 +5,7 @@ import { AnimatedGroup } from '@/components/ui/animated-group'
 import { cn } from '@/lib/utils'
 import { HeroGeometric } from '@/components/ui/shape-landing-hero'
 import { Logo } from '@/components/Logo'
-
-const WHATSAPP_NUMBER = "923065904574";
-const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20Torrent%20Pharma,%20I%20want%20to%20discuss%20pharma%20expansion%20opportunities.`;
+import { WHATSAPP_LINK } from '@/lib/constants'
 
 const transitionVariants = {
     item: {

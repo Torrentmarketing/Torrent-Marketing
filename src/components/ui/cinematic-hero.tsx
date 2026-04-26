@@ -5,6 +5,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { cn } from "@/lib/utils";
+import { WHATSAPP_LINK } from "@/lib/constants";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);

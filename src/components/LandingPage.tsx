@@ -5,9 +5,7 @@ import { CinematicHero } from "./ui/cinematic-hero";
 import { Button } from "@/components/ui/neon-button";
 import { AnimatedTestimonials } from "./blocks/animated-testimonials";
 import { ParallaxScrollSection } from "./ui/parallax-scroll-feature-section";
-
-const WHATSAPP_NUMBER = "923065904574";
-const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20Torrent%20Pharma,%20I%20want%20to%20discuss%20pharma%20expansion%20opportunities.`;
+import { WHATSAPP_LINK } from "@/lib/constants";
 
 const UserPaths = () => (
   <section className="py-20 bg-bg">
@@ -49,7 +47,7 @@ const UserPaths = () => (
           <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
             <Users size={120} />
           </div>
-          <h3 className="text-2xl font-display font-bold text-teal mb-4">For Franchisers</h3>
+          <h3 className="text-2xl font-display font-bold text-cyan mb-4">For Franchisers</h3>
           <p className="text-slate-300 mb-6">Entrepreneurs and Medical Store owners looking for high-margin pharma franchise opportunities in their city.</p>
           <ul className="space-y-3 mb-8">
             <li className="flex items-center gap-2 text-sm text-slate-300"><CheckCircle2 className="w-4 h-4 text-cyan" /> Connect with top manufacturers</li>
@@ -58,7 +56,7 @@ const UserPaths = () => (
           </ul>
           <Button 
             variant="solid"
-            className="inline-flex items-center gap-2 bg-teal text-white px-6 py-3 rounded-xl font-bold hover:shadow-lg transition-all border-none"
+            className="inline-flex items-center gap-2 bg-cyan text-white px-6 py-3 rounded-xl font-bold hover:shadow-lg transition-all border-none"
             onClick={() => window.open(WHATSAPP_LINK, '_blank')}
           >
             Find a Franchise <ArrowRight className="w-4 h-4" />
