@@ -126,82 +126,7 @@ const Services = () => {
   );
 };
 
-const ExpansionSystem = () => {
-  const steps = [
-    { title: "Brand Audit", desc: "Aapke products aur target territory ka analysis." },
-    { title: "Lead Funnel Setup", desc: "High-converting landing pages aur ad creatives." },
-    { title: "Targeted Launch", desc: "Facebook & Instagram ads targeting pharma investors." },
-    { title: "WhatsApp Automation", desc: "Leads direct aapke sales team ke WhatsApp par." },
-    { title: "Scaling", desc: "Results dekh kar budget barhana aur expansion." }
-  ];
 
-  return (
-    <section id="system" className="py-24 bg-navy text-white overflow-hidden relative">
-      {/* Decorative background elements for better visibility */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(10,31,143,0.4),transparent)] pointer-events-none" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_70%,rgba(242,125,38,0.1),transparent)] pointer-events-none" />
-      
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <h2 className="text-4xl lg:text-6xl font-display font-bold mb-8 leading-tight">
-              The 5-Step <br />
-              <span className="text-teal drop-shadow-sm">Expansion System</span>
-            </h2>
-            <p className="text-slate-300 text-lg mb-12 max-w-lg leading-relaxed">
-              Humne pharma expansion ko ek science bana diya hai. Follow our system and watch your distributor network grow with precision.
-            </p>
-            <div className="space-y-8">
-              {steps.map((step, i) => (
-                <div key={i} className="flex items-start gap-6 group">
-                  <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center font-bold text-teal group-hover:bg-teal group-hover:text-white group-hover:border-teal transition-all shrink-0 shadow-lg">
-                    {i + 1}
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2 text-white group-hover:text-pharma-accent transition-colors">{step.title}</h3>
-                    <p className="text-slate-400 group-hover:text-slate-300 transition-colors leading-relaxed">{step.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="relative">
-             <div className="aspect-square rounded-full border-2 border-white/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] animate-spin-slow opacity-20" />
-             <div className="relative z-10 glass-card p-8 rounded-[40px] border-white/10 bg-white/5 backdrop-blur-xl">
-                <div className="bg-white/5 p-6 rounded-3xl mb-6 border border-white/10">
-                  <p className="text-sm font-bold text-pharma-accent uppercase mb-4 tracking-wider">Live Campaign Stats</p>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="p-4 bg-white/5 rounded-2xl border border-white/5">
-                      <p className="text-4xl font-bold text-white">48</p>
-                      <p className="text-xs text-slate-400 font-medium">New Leads Today</p>
-                    </div>
-                    <div className="p-4 bg-white/5 rounded-2xl border border-white/5">
-                      <p className="text-4xl font-bold text-white">12</p>
-                      <p className="text-xs text-slate-400 font-medium">Franchise Closed</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="space-y-4">
-                  {[1,2,3].map(i => (
-                    <div key={i} className="flex items-center gap-4 p-4 bg-white/5 rounded-2xl border border-white/5 hover:bg-white/10 transition-colors">
-                      <div className="w-10 h-10 rounded-full bg-pharma-accent/20 flex items-center justify-center">
-                        <Users className="w-5 h-5 text-pharma-accent" />
-                      </div>
-                      <div className="flex-1">
-                        <div className="h-2 w-24 bg-white/20 rounded mb-2" />
-                        <div className="h-1.5 w-16 bg-white/10 rounded" />
-                      </div>
-                      <div className="text-pharma-accent text-[10px] font-bold px-2 py-1 bg-pharma-accent/10 rounded-full">NEW LEAD</div>
-                    </div>
-                  ))}
-                </div>
-             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
 
 const Pricing = () => {
   const plans = [
@@ -517,7 +442,7 @@ const Footer = () => (
           <h4 className="font-bold mb-6">Quick Links</h4>
           <ul className="space-y-4 text-slate-400">
             <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
-            <li><a href="#system" className="hover:text-white transition-colors">Expansion System</a></li>
+
             <li><a href="#pricing" className="hover:text-white transition-colors">Pricing</a></li>
             <li><a href="#" className="hover:text-white transition-colors">Case Studies</a></li>
           </ul>
@@ -545,7 +470,7 @@ export default function LandingPage() {
       <UserPaths />
       <AboutUs />
       <Services />
-      <ExpansionSystem />
+
       <ParallaxScrollSection />
       <Pricing />
       <Results />
