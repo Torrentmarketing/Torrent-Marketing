@@ -43,7 +43,7 @@ export function HeroSection() {
                     <Button
                         variant="solid"
                         size="lg"
-                        className="rounded-full px-8 text-base bg-teal hover:bg-teal/90 text-white border-none shadow-[0_0_20px_rgba(0,168,120,0.3)]">
+                        className="rounded-full px-8 text-base bg-orange hover:bg-orange/90 text-white border-none shadow-[0_0_20px_rgba(249,115,22,0.3)]">
                         <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                             <span className="text-nowrap flex items-center gap-2 font-bold">WhatsApp Us Now <MessageCircle className="size-4" /></span>
                         </a>
@@ -65,14 +65,14 @@ export function HeroSection() {
                         <h2 className="text-2xl font-display font-bold text-white/80">Meet Our Successful Partners</h2>
                     </div>
                     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center justify-items-center opacity-70 hover:opacity-100 transition-opacity">
-                        <div className="text-white/60 font-display font-bold text-sm hover:text-teal transition-colors text-center">PFE Pharma</div>
-                        <div className="text-white/60 font-display font-bold text-sm hover:text-teal transition-colors text-center">PERK Pharma</div>
-                        <div className="text-white/60 font-display font-bold text-sm hover:text-teal transition-colors text-center">Crescent Pharma</div>
-                        <div className="text-white/60 font-display font-bold text-sm hover:text-teal transition-colors text-center">Shaafi Pharma</div>
-                        <div className="text-white/60 font-display font-bold text-sm hover:text-teal transition-colors text-center">Zain Pharma</div>
-                        <div className="text-white/60 font-display font-bold text-sm hover:text-teal transition-colors text-center">Caliph Pharma</div>
-                        <div className="text-white/60 font-display font-bold text-sm hover:text-teal transition-colors text-center">Delta Pharma</div>
-                        <div className="text-white/60 font-display font-bold text-sm hover:text-teal transition-colors text-center">Shazal's Pharma</div>
+                        <div className="text-white/60 font-display font-bold text-sm hover:text-cyan transition-colors text-center">PFE Pharma</div>
+                        <div className="text-white/60 font-display font-bold text-sm hover:text-cyan transition-colors text-center">PERK Pharma</div>
+                        <div className="text-white/60 font-display font-bold text-sm hover:text-cyan transition-colors text-center">Crescent Pharma</div>
+                        <div className="text-white/60 font-display font-bold text-sm hover:text-cyan transition-colors text-center">Shaafi Pharma</div>
+                        <div className="text-white/60 font-display font-bold text-sm hover:text-cyan transition-colors text-center">Zain Pharma</div>
+                        <div className="text-white/60 font-display font-bold text-sm hover:text-cyan transition-colors text-center">Caliph Pharma</div>
+                        <div className="text-white/60 font-display font-bold text-sm hover:text-cyan transition-colors text-center">Delta Pharma</div>
+                        <div className="text-white/60 font-display font-bold text-sm hover:text-cyan transition-colors text-center">Shazal's Pharma</div>
                     </div>
                 </div>
             </section>
@@ -104,7 +104,7 @@ export const HeroHeader = () => {
             <nav
                 data-state={menuState && 'active'}
                 className="fixed z-50 w-full px-2 group top-0">
-                <div className={cn('mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12', isScrolled && 'bg-white/70 max-w-4xl rounded-2xl border backdrop-blur-lg lg:px-5 shadow-lg')}>
+                <div className={cn('mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12', isScrolled && 'bg-navy/40 max-w-4xl rounded-2xl border border-white/10 backdrop-blur-lg lg:px-5 shadow-2xl')}>
                     <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
                         <div className="flex w-full justify-between lg:w-auto">
                             <a
@@ -129,7 +129,7 @@ export const HeroHeader = () => {
                                     <li key={index}>
                                         <a
                                             href={item.href}
-                                            className="text-navy/80 hover:text-navy block duration-150 font-medium">
+                                            className="text-white/70 hover:text-white block duration-150 font-medium">
                                             <span>{item.name}</span>
                                         </a>
                                     </li>
@@ -137,14 +137,14 @@ export const HeroHeader = () => {
                             </ul>
                         </div>
 
-                        <div className="bg-white group-data-[state=active]:block lg:group-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none">
+                        <div className="bg-card group-data-[state=active]:block lg:group-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border border-white/10 p-6 shadow-2xl shadow-black/50 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none">
                             <div className="lg:hidden">
                                 <ul className="space-y-6 text-base">
                                     {menuItems.map((item, index) => (
                                         <li key={index}>
                                             <a
                                                 href={item.href}
-                                                className="text-navy/80 hover:text-navy block duration-150 font-medium">
+                                                className="text-white/70 hover:text-white block duration-150 font-medium">
                                                 <span>{item.name}</span>
                                             </a>
                                         </li>
@@ -155,7 +155,7 @@ export const HeroHeader = () => {
                                 <Button
                                     variant="solid"
                                     size="sm"
-                                    className={cn("bg-navy text-white hover:bg-navy/90", isScrolled ? 'lg:inline-flex' : 'hidden')}>
+                                    className={cn("bg-orange text-white hover:bg-orange/90", isScrolled ? 'lg:inline-flex' : 'hidden')}>
                                     <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
                                         <span>Get Started</span>
                                     </a>
@@ -164,7 +164,7 @@ export const HeroHeader = () => {
                                      <Button
                                         variant="solid"
                                         size="sm"
-                                        className="bg-navy text-white hover:bg-navy/90">
+                                        className="bg-orange text-white hover:bg-orange/90">
                                         <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
                                             <span>Contact Us</span>
                                         </a>

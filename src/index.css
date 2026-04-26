@@ -5,8 +5,14 @@
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   
   --color-navy: #000066;
-  --color-teal: #00A878;
-  --color-light-bg: #F4F8F6;
+  --color-teal: #06B6D4;
+  --color-cyan: #06B6D4;
+  --color-orange: #F97316;
+  --color-accent: #F97316;
+  --color-bg: #020617;
+  --color-card: #0F172A;
+  --color-text: #F8FAFC;
+  --color-muted: #94A3B8;
   --color-white: #FFFFFF;
 
   @keyframes spin-slow {
@@ -23,34 +29,34 @@
 
 body {
   font-family: var(--font-body-family);
-  background-color: var(--color-light-bg);
-  color: #000066;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 h1, h2, h3 {
   font-family: var(--font-heading-family);
-  color: var(--color-navy);
+  color: var(--color-text);
 }
 
 h4, h5, h6 {
   font-family: var(--font-body-family);
-  color: var(--color-navy);
+  color: var(--color-text);
 }
 
 .gradient-text {
-  background: linear-gradient(to right, var(--color-navy), var(--color-teal));
+  background: linear-gradient(to right, var(--color-cyan), var(--color-orange));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, var(--color-navy) 0%, #252575 100%);
+  background: linear-gradient(135deg, var(--color-navy) 0%, #0F172A 100%);
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(15, 23, 42, 0.6);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .lab-bg::before {

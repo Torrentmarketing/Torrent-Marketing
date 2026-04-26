@@ -131,18 +131,18 @@ const INJECTED_STYLES = `
       transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
   }
   .btn-modern-light {
-      background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F9 100%);
-      color: #0F172A;
-      box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.1), 0 12px 24px -4px rgba(0,0,0,0.3), inset 0 1px 1px rgba(255,255,255,1), inset 0 -3px 6px rgba(0,0,0,0.06);
+      background: linear-gradient(180deg, var(--color-orange) 0%, #EA580C 100%);
+      color: #FFFFFF;
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.1), 0 2px 4px rgba(0,0,0,0.3), 0 12px 24px -4px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.2), inset 0 -3px 6px rgba(0,0,0,0.1);
   }
   .btn-modern-light:hover {
       transform: translateY(-3px);
-      box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 6px 12px -2px rgba(0,0,0,0.15), 0 20px 32px -6px rgba(0,0,0,0.4), inset 0 1px 1px rgba(255,255,255,1), inset 0 -3px 6px rgba(0,0,0,0.06);
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.2), 0 6px 12px -2px rgba(0,0,0,0.4), 0 20px 32px -6px rgba(0,0,0,0.6), inset 0 1px 1px rgba(255,255,255,0.3), inset 0 -3px 6px rgba(0,0,0,0.1);
   }
   .btn-modern-light:active {
       transform: translateY(1px);
-      background: linear-gradient(180deg, #F1F5F9 0%, #E2E8F0 100%);
-      box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.1), inset 0 3px 6px rgba(0,0,0,0.1), inset 0 0 0 1px rgba(0,0,0,0.02);
+      background: linear-gradient(180deg, #EA580C 0%, #C2410C 100%);
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.2), inset 0 3px 6px rgba(0,0,0,0.3), inset 0 0 0 1px rgba(0,0,0,0.1);
   }
   .btn-modern-dark {
       background: linear-gradient(180deg, #27272A 0%, #18181B 100%);
@@ -303,7 +303,7 @@ export function CinematicHero({
   return (
     <div
       ref={containerRef}
-      className={cn("relative w-screen h-screen overflow-hidden flex items-center justify-center bg-background text-foreground font-sans antialiased", className)}
+      className={cn("relative w-screen h-screen overflow-hidden flex items-center justify-center bg-bg text-white font-sans antialiased", className)}
       style={{ perspective: "1500px" }}
       {...props}
     >
@@ -330,12 +330,12 @@ export function CinematicHero({
           {ctaDescription}
         </p>
         <div className="flex flex-col sm:flex-row gap-6">
-          <a href="#" aria-label="Download on the App Store" className="btn-modern-light flex items-center justify-center gap-3 px-8 py-4 rounded-[1.25rem] group focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+          <a href={WHATSAPP_LINK} aria-label="Get Started" className="btn-modern-light flex items-center justify-center gap-3 px-8 py-4 rounded-[1.25rem] group focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
             <div className="text-center w-full">
               <div className="text-xl font-bold leading-none tracking-tight">Learn More</div>
             </div>
           </a>
-          <a href="#" aria-label="Get it on Google Play" className="btn-modern-dark flex items-center justify-center gap-3 px-8 py-4 rounded-[1.25rem] group focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-background">
+          <a href="#about" aria-label="Learn More" className="btn-modern-dark flex items-center justify-center gap-3 px-8 py-4 rounded-[1.25rem] group focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-background">
             <div className="text-center w-full">
               <div className="text-xl font-bold leading-none tracking-tight">Contact Us</div>
             </div>
@@ -400,7 +400,7 @@ export function CinematicHero({
                       <div className="phone-widget relative w-44 h-44 mx-auto flex items-center justify-center mb-8 drop-shadow-[0_15px_25px_rgba(0,0,0,0.8)]">
                         <svg className="absolute inset-0 w-full h-full" aria-hidden="true">
                           <circle cx="88" cy="88" r="64" fill="none" stroke="rgba(255,255,255,0.03)" strokeWidth="12" />
-                          <circle className="progress-ring" cx="88" cy="88" r="64" fill="none" stroke="#3B82F6" strokeWidth="12" />
+                          <circle className="progress-ring" cx="88" cy="88" r="64" fill="none" stroke="var(--color-cyan)" strokeWidth="12" />
                         </svg>
                         <div className="text-center z-10 flex flex-col items-center">
                           <span className="counter-val text-4xl font-extrabold tracking-tighter text-white">0</span>

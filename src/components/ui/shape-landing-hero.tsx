@@ -99,8 +99,8 @@ function HeroGeometric({
     };
 
     return (
-        <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-light-bg">
-            <div className="absolute inset-0 bg-gradient-to-br from-teal/[0.05] via-transparent to-navy/[0.05] blur-3xl" />
+        <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-bg">
+            <div className="absolute inset-0 bg-gradient-to-br from-cyan/[0.05] via-transparent to-navy/[0.05] blur-3xl" />
 
             <div className="absolute inset-0 overflow-hidden">
                 <ElegantShape
@@ -156,10 +156,10 @@ function HeroGeometric({
                         variants={fadeUpVariants}
                         initial="hidden"
                         animate="visible"
-                        className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-navy/[0.03] border border-navy/[0.08] mb-8 md:mb-12"
+                        className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
                     >
-                        <Circle className="h-2 w-2 fill-teal/80" />
-                        <span className="text-sm text-navy/60 tracking-wide">
+                        <Circle className="h-2 w-2 fill-cyan/80" />
+                        <span className="text-sm text-white/60 tracking-wide">
                             {badge}
                         </span>
                     </motion.div>
@@ -171,13 +171,13 @@ function HeroGeometric({
                         animate="visible"
                     >
                         <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tight">
-                            <span className="bg-clip-text text-transparent bg-gradient-to-b from-navy to-navy/80">
+                            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">
                                 {title1}
                             </span>
                             <br />
                             <span
                                 className={cn(
-                                    "bg-clip-text text-transparent bg-gradient-to-r from-teal via-navy/90 to-teal "
+                                    "bg-clip-text text-transparent bg-gradient-to-r from-cyan via-white to-orange "
                                 )}
                             >
                                 {title2}
@@ -191,7 +191,7 @@ function HeroGeometric({
                         initial="hidden"
                         animate="visible"
                     >
-                        <p className="text-base sm:text-lg md:text-xl text-navy/60 mb-8 leading-relaxed font-light tracking-wide max-w-2xl mx-auto px-4">
+                        <p className="text-base sm:text-lg md:text-xl text-white/60 mb-8 leading-relaxed font-light tracking-wide max-w-2xl mx-auto px-4">
                             {description || "Hum aapke pharma brand ko Pakistan ke har kone mein pohnchayenge through targeted franchise lead generation and territory-based marketing."}
                         </p>
                     </motion.div>
@@ -207,7 +207,7 @@ function HeroGeometric({
                 </div>
             </div>
 
-            <div className="absolute inset-0 bg-gradient-to-t from-light-bg via-transparent to-light-bg/80 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-bg/80 pointer-events-none" />
         </div>
     );
 }
